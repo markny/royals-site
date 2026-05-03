@@ -1,0 +1,403 @@
+@import "tailwindcss";
+
+@theme {
+  --color-royal-50: #eff6ff;
+  --color-royal-100: #dbeafe;
+  --color-royal-600: #2563eb;
+  --color-royal-700: #1d4ed8;
+  --color-royal-900: #0b2d71;
+  --color-gold-400: #f4c542;
+  --color-gold-500: #d7a514;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.4rem;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  background: white;
+  color: rgb(51 65 85);
+  font-size: 0.9rem;
+  font-weight: 750;
+  white-space: nowrap;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.nav-button-active,
+.nav-button:hover {
+  border-color: rgb(37 99 235);
+  background: rgb(239 246 255);
+  color: rgb(29 78 216);
+}
+
+.hero-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, rgba(11, 45, 113, 0.96), rgba(16, 66, 142, 0.88)),
+    radial-gradient(circle at 80% 25%, rgba(244, 197, 66, 0.45), transparent 28%);
+  color: white;
+  padding: clamp(1.25rem, 5vw, 3rem);
+}
+
+@media (min-width: 820px) {
+  .hero-band {
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+    align-items: stretch;
+  }
+}
+
+.hero-copy h2 {
+  max-width: 780px;
+  margin: 0.5rem 0 0;
+  font-size: clamp(2.1rem, 5vw, 4.75rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+  font-weight: 950;
+}
+
+.hero-copy p:not(.eyebrow) {
+  max-width: 760px;
+  margin-top: 1rem;
+  color: rgb(219 234 254);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.35rem;
+}
+
+.primary-action,
+.secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 850;
+}
+
+.primary-action {
+  border: 1px solid rgb(244 197 66);
+  background: rgb(244 197 66);
+  color: rgb(15 23 42);
+}
+
+.secondary-action {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.scoreboard-panel {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0.5rem;
+  background: rgba(15, 23, 42, 0.34);
+  padding: 1.25rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.scoreboard-label {
+  width: fit-content;
+  border-radius: 999px;
+  background: rgb(244 197 66);
+  padding: 0.25rem 0.6rem;
+  color: rgb(15 23 42);
+  font-weight: 950;
+}
+
+.scoreboard-panel strong {
+  font-size: clamp(3.2rem, 8vw, 5.8rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.scoreboard-panel span:last-child {
+  color: rgb(219 234 254);
+  font-weight: 750;
+}
+
+.eyebrow {
+  margin: 0;
+  color: rgb(215 165 20);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.metric-grid,
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card,
+.feature-panel,
+.content-section,
+.mini-card,
+.recap-card {
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.stat-card,
+.feature-panel,
+.content-section {
+  padding: 1rem;
+}
+
+.stat-card-blue {
+  border-top: 4px solid rgb(37 99 235);
+}
+
+.stat-card-gold {
+  border-top: 4px solid rgb(244 197 66);
+}
+
+.feature-panel {
+  min-height: 13rem;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(29 78 216);
+}
+
+.panel-heading h2,
+.panel-heading h3 {
+  margin: 0;
+  color: rgb(15 23 42);
+  font-size: 1.05rem;
+  font-weight: 950;
+}
+
+.feature-title {
+  margin: 1rem 0 0.35rem;
+  color: rgb(15 23 42);
+  font-size: 1.45rem;
+  font-weight: 950;
+}
+
+.feature-panel p:not(.feature-title),
+.mini-card p,
+.recap-card p,
+.prospect-row p,
+.timeline-item p {
+  color: rgb(71 85 105);
+  line-height: 1.65;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 950;
+}
+
+.table-frame {
+  overflow-x: auto;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+}
+
+table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+th {
+  background: rgb(248 250 252);
+  color: rgb(51 65 85);
+  font-size: 0.75rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+th button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0.8rem;
+  color: inherit;
+  font-weight: 900;
+  text-align: left;
+}
+
+td {
+  border-top: 1px solid rgb(226 232 240);
+  padding: 0.85rem;
+  color: rgb(15 23 42);
+  font-size: 0.92rem;
+}
+
+.timeline,
+.prospect-list,
+.recap-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timeline-item,
+.prospect-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.8rem;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 700px) {
+  .timeline-item,
+  .prospect-row {
+    grid-template-columns: minmax(0, 1fr) auto minmax(220px, 0.6fr);
+    align-items: center;
+  }
+}
+
+.timeline-date,
+.rank,
+.recap-meta {
+  color: rgb(100 116 139);
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.timeline-item h3,
+.prospect-row h3,
+.recap-card h3,
+.mini-card h3 {
+  margin: 0.25rem 0;
+  color: rgb(15 23 42);
+  font-weight: 950;
+}
+
+.game-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-start;
+}
+
+.badge-win,
+.badge-loss,
+.badge-neutral {
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 950;
+}
+
+.badge-win {
+  background: rgb(220 252 231);
+  color: rgb(22 101 52);
+}
+
+.badge-loss {
+  background: rgb(254 226 226);
+  color: rgb(153 27 27);
+}
+
+.badge-neutral {
+  background: rgb(226 232 240);
+  color: rgb(51 65 85);
+}
+
+.accent-section {
+  background: linear-gradient(135deg, rgb(239 246 255), white);
+}
+
+.prospect-hot-grid,
+.recap-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.mini-card,
+.recap-card {
+  padding: 1rem;
+}
+
+.prospect-stat {
+  width: fit-content;
+  border-radius: 999px;
+  background: rgb(239 246 255);
+  padding: 0.45rem 0.7rem;
+  color: rgb(29 78 216);
+  font-weight: 950;
+}
+
+.recap-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.recap-performers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+
+.recap-performers span {
+  border-radius: 999px;
+  background: rgb(248 250 252);
+  padding: 0.3rem 0.55rem;
+  color: rgb(51 65 85);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.statcast-note {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
