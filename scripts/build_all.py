@@ -14,6 +14,7 @@ def run(script):
 
 def main():
     run("fetch_mlb.py")
+    run("fetch_game_details.py")
     run("generate_content.py")
 
 

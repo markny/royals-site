@@ -355,8 +355,14 @@ td {
 }
 
 .prospect-hot-grid,
-.recap-grid {
+.recap-grid,
+.insight-grid {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.insight-grid {
+  display: grid;
+  gap: 0.8rem;
 }
 
 .mini-card,
@@ -400,4 +406,26 @@ td {
   gap: 0.45rem;
   align-items: flex-start;
   margin-top: 1rem;
+}
+
+.compact-list {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.85rem;
+}
+
+.compact-list p {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
+}
+
+.compact-list strong {
+  color: rgb(15 23 42);
+  font-size: 0.92rem;
+}
+
+.compact-list span {
+  color: rgb(71 85 105);
+  font-size: 0.86rem;
 }

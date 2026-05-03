@@ -209,6 +209,42 @@ def fetch_team_stats(group, category):
     }
 
 
+def fetch_hitting_sabermetrics():
+    raw = get_json(
+        "/stats",
+        {
+            "season": SEASON,
+            "stats": "sabermetrics",
+            "group": "hitting",
+            "playerPool": "all",
+            "teamId": ROYALS_TEAM_ID,
+            "limit": 12,
+            "hydrate": "person",
+        },
+    )
+    write_json(RAW_DIR / "mlb-hitting-sabermetrics.json", raw)
+    stats = raw.get("stats", [])
+    if not stats:
+        raise MlbApiError("No hitting sabermetrics returned")
+    players = []
+    for split in stats[0].get("splits", []):
+        stat = split.get("stat", {})
+        player = split.get("player", {})
+        players.append(
+            {
+                "id": player.get("id"),
+                "player": player.get("fullName", "Player"),
+                "war": round(safe_float(stat.get("war")), 2),
+                "woba": round(safe_float(stat.get("woba")), 3),
+                "wrc_plus": round(safe_float(stat.get("wRcPlus")), 0),
+                "wraa": round(safe_float(stat.get("wRaa")), 1),
+            }
+        )
+    if not players:
+        raise MlbApiError("No hitting sabermetric player rows returned")
+    return {"source": "mlb-stats-api", "season": SEASON, "generated_at": now_iso(), "players": players}
+
+
 def add_fallback_metadata(data, reason):
     output = dict(data)
     output["generated_at"] = now_iso()
@@ -223,6 +259,7 @@ def main():
         ("standings.json", fetch_standings, SAMPLE_STANDINGS),
         ("hitting-stats.json", lambda: fetch_team_stats("hitting", "hitting"), SAMPLE_HITTING),
         ("pitching-stats.json", lambda: fetch_team_stats("pitching", "pitching"), SAMPLE_PITCHING),
+        ("hitting-sabermetrics.json", fetch_hitting_sabermetrics, {"source": "sample", "players": []}),
     ]
     for filename, fetcher, fallback in fetchers:
         try:

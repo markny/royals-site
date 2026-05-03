@@ -70,7 +70,8 @@ The update flow is intentionally split:
 ## Current Data Sources
 
 - MLB schedule, standings, hitting, and pitching stats use the public MLB Stats API.
-- Statcast/Baseball Savant data is represented by a placeholder JSON layer for now.
+- MLB sabermetrics, latest-game box scores, play-by-play batted-ball data, and the daily MLB scoreboard use the public MLB Stats API.
+- Season-long Baseball Savant data is represented by a placeholder JSON layer for now.
 - Prospect tracking is represented by curated placeholder data for now.
 
 Both placeholder areas are deliberately isolated so they can be replaced without touching the frontend.

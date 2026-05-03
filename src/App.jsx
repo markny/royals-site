@@ -91,6 +91,48 @@ function HomePage({ onNavigate }) {
           <p>{latestRecap.summary}</p>
         </article>
       </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Latest Game Detail</p>
+          <h2>Box Score + Contact Quality</h2>
+        </div>
+        <div className="insight-grid">
+          <article className="mini-card">
+            <h3>Royals Box Score</h3>
+            <div className="compact-list">
+              {(data.latestGameDetails.royals_boxscore?.batting ?? []).slice(0, 5).map((row) => (
+                <p key={row.player}>
+                  <strong>{row.player}</strong>
+                  <span>{row.summary}</span>
+                </p>
+              ))}
+            </div>
+          </article>
+          <article className="mini-card">
+            <h3>Hardest Contact</h3>
+            <div className="compact-list">
+              {(data.latestGameDetails.batted_balls?.hardest ?? []).slice(0, 5).map((row, index) => (
+                <p key={`${row.batter}-${index}`}>
+                  <strong>{row.batter}</strong>
+                  <span>{row.exit_velocity} mph, {row.launch_angle} deg · {row.event}</span>
+                </p>
+              ))}
+            </div>
+          </article>
+          <article className="mini-card">
+            <h3>Today Around MLB</h3>
+            <div className="compact-list">
+              {data.scoreboard.games.slice(0, 6).map((game) => (
+                <p key={game.game_pk}>
+                  <strong>{game.away_team} {game.away_score ?? ''} @ {game.home_team} {game.home_score ?? ''}</strong>
+                  <span>{game.status}</span>
+                </p>
+              ))}
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
   );
 }
@@ -147,9 +189,30 @@ function StatsPage() {
     { key: 'barrel_pct', label: 'Barrel %' },
     { key: 'note', label: 'Note' },
   ];
+  const sabermetricColumns = [
+    { key: 'player', label: 'Hitter' },
+    { key: 'war', label: 'WAR' },
+    { key: 'woba', label: 'wOBA', render: pct },
+    { key: 'wrc_plus', label: 'wRC+' },
+    { key: 'wraa', label: 'wRAA' },
+  ];
+  const battedBallColumns = [
+    { key: 'batter', label: 'Batter' },
+    { key: 'max_exit_velocity', label: 'Max EV' },
+    { key: 'avg_exit_velocity', label: 'Avg EV' },
+    { key: 'hard_hit_pct', label: 'Hard-Hit %' },
+    { key: 'batted_balls', label: 'BBE' },
+  ];
 
   return (
     <div className="space-y-6">
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">MLB Stats API Sabermetrics</p>
+          <h2>Advanced Hitting</h2>
+        </div>
+        <DataTable columns={sabermetricColumns} rows={data.sabermetrics.players} initialSort="war" />
+      </section>
       <section className="content-section">
         <div className="section-heading">
           <p className="eyebrow">MLB Stats API</p>
@@ -166,8 +229,19 @@ function StatsPage() {
       </section>
       <section className="content-section">
         <div className="section-heading">
+          <p className="eyebrow">Latest Game Play-By-Play</p>
+          <h2>Batted-Ball Contact</h2>
+        </div>
+        <DataTable
+          columns={battedBallColumns}
+          rows={data.latestGameDetails.batted_balls?.by_batter ?? []}
+          initialSort="max_exit_velocity"
+        />
+      </section>
+      <section className="content-section">
+        <div className="section-heading">
           <p className="eyebrow">Baseball Savant Placeholder Layer</p>
-          <h2>Statcast Watchlist</h2>
+          <h2>Season Statcast Watchlist</h2>
         </div>
         <DataTable columns={statcastColumns} rows={data.statcast.players} initialSort="hard_hit_pct" />
       </section>
