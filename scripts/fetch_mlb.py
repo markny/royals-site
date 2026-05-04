@@ -15,7 +15,6 @@ from lib.samples import (
     SAMPLE_GAME_LOG,
     SAMPLE_HITTING,
     SAMPLE_PITCHING,
-    SAMPLE_PROSPECTS,
     SAMPLE_STATCAST,
     SAMPLE_STANDINGS,
 )
@@ -269,7 +268,6 @@ def main():
         write_json(GENERATED_DIR / filename, payload)
 
     write_json(GENERATED_DIR / "statcast-metrics.json", add_fallback_metadata(SAMPLE_STATCAST, "Savant ingestion TODO"))
-    write_json(GENERATED_DIR / "prospects.json", add_fallback_metadata(SAMPLE_PROSPECTS, "Prospect feed TODO"))
 
 
 if __name__ == "__main__":

@@ -379,6 +379,27 @@ td {
   font-weight: 950;
 }
 
+.recent-line {
+  margin: 0.45rem 0 0;
+  font-size: 0.85rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.7rem;
+}
+
+.tag-row span {
+  border-radius: 999px;
+  background: rgb(248 250 252);
+  padding: 0.25rem 0.5rem;
+  color: rgb(71 85 105);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
 .recap-meta {
   display: flex;
   justify-content: space-between;

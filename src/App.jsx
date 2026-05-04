@@ -275,12 +275,22 @@ function ProspectPage() {
           {data.prospects.prospects.map((prospect) => (
             <article key={prospect.name} className="prospect-row">
               <div>
-                <span className="rank">#{prospect.rank}</span>
+                <span className="rank">{prospect.rank_label ?? `#${prospect.rank}`}</span>
                 <h3>{prospect.name}</h3>
                 <p>{prospect.position} · {prospect.affiliate} · {prospect.level}</p>
               </div>
-              <div className="prospect-stat">{prospect.line}</div>
-              <p>{prospect.trend_note}</p>
+              <div>
+                <div className="prospect-stat">{prospect.line}</div>
+                <p className="recent-line">{prospect.trend_label}: {prospect.recent_line}</p>
+              </div>
+              <div>
+                <p>{prospect.watch_reason ?? prospect.trend_note}</p>
+                <div className="tag-row">
+                  {(prospect.tags ?? []).map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+              </div>
             </article>
           ))}
         </div>
