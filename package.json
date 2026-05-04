@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "update:data": "python3 scripts/build_all.py",
+    "validate:data": "python3 scripts/validate_outputs.py",
     "update:mlb": "python3 scripts/fetch_mlb.py",
     "generate:content": "python3 scripts/generate_content.py"
   },

@@ -5,14 +5,13 @@ The watchlist is intentionally editorial. The API supplies performance; the
 watchlist explains why the player matters to this specific Royals tracker.
 """
 
-from datetime import date
-
 from lib.io import now_iso, read_json, write_json
 from lib.mlb_api import MlbApiError, get_json
 from lib.paths import DATA_DIR, GENERATED_DIR, RAW_DIR, ensure_dirs
+from lib.run_context import season
 
 WATCHLIST_PATH = DATA_DIR / "prospects" / "watchlist.json"
-SEASON = date.today().year
+SEASON = season()
 
 
 def safe_float(value):

@@ -2,11 +2,11 @@
 """Fetch high-value game details that make the site useful day to day."""
 
 from collections import defaultdict
-from datetime import date
 
 from lib.io import now_iso, read_json, write_json
 from lib.mlb_api import MlbApiError, get_json
 from lib.paths import GENERATED_DIR, RAW_DIR, ensure_dirs
+from lib.run_context import as_of_date
 
 
 def latest_completed_game(games):
@@ -143,7 +143,7 @@ def fetch_scoreboard():
         "/schedule",
         {
             "sportId": 1,
-            "date": date.today().isoformat(),
+            "date": as_of_date().isoformat(),
             "hydrate": "team,linescore,probablePitcher",
         },
     )
@@ -169,7 +169,7 @@ def fetch_scoreboard():
                     "game_datetime": game.get("gameDate"),
                 }
             )
-    return {"source": "mlb-stats-api", "generated_at": now_iso(), "date": date.today().isoformat(), "games": games}
+    return {"source": "mlb-stats-api", "generated_at": now_iso(), "date": as_of_date().isoformat(), "games": games}
 
 
 def main():

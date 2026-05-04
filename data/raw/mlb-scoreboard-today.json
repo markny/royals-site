@@ -6358,80 +6358,81 @@
           "ifNecessary": "N",
           "ifNecessaryDescription": "Normal Game",
           "inningBreakLength": 145,
+          "isTie": false,
           "linescore": {
-            "balls": 2,
-            "currentInning": 7,
-            "currentInningOrdinal": "7th",
+            "balls": 3,
+            "currentInning": 9,
+            "currentInningOrdinal": "9th",
             "defense": {
               "batter": {
-                "fullName": "Andrew McCutchen",
-                "id": 457705,
-                "link": "/api/v1/people/457705"
+                "fullName": "Wenceel P\u00e9rez",
+                "id": 672761,
+                "link": "/api/v1/people/672761"
               },
-              "battingOrder": 2,
+              "battingOrder": 7,
               "catcher": {
-                "fullName": "Kyle Higashioka",
-                "id": 543309,
-                "link": "/api/v1/people/543309"
+                "fullName": "Jake Rogers",
+                "id": 668670,
+                "link": "/api/v1/people/668670"
               },
               "center": {
-                "fullName": "Evan Carter",
-                "id": 694497,
-                "link": "/api/v1/people/694497"
+                "fullName": "Matt Vierling",
+                "id": 663837,
+                "link": "/api/v1/people/663837"
               },
               "first": {
-                "fullName": "Jake Burger",
-                "id": 669394,
-                "link": "/api/v1/people/669394"
+                "fullName": "Spencer Torkelson",
+                "id": 679529,
+                "link": "/api/v1/people/679529"
               },
               "inHole": {
-                "fullName": "Josh Jung",
-                "id": 673962,
-                "link": "/api/v1/people/673962"
+                "fullName": "Jake Rogers",
+                "id": 668670,
+                "link": "/api/v1/people/668670"
               },
               "left": {
-                "fullName": "Ezequiel Duran",
-                "id": 677649,
-                "link": "/api/v1/people/677649"
+                "fullName": "Riley Greene",
+                "id": 682985,
+                "link": "/api/v1/people/682985"
               },
               "onDeck": {
-                "fullName": "Corey Seager",
-                "id": 608369,
-                "link": "/api/v1/people/608369"
+                "fullName": "Hao-Yu  Lee",
+                "id": 701678,
+                "link": "/api/v1/people/701678"
               },
               "pitcher": {
-                "fullName": "Jack Leiter",
-                "id": 683004,
-                "link": "/api/v1/people/683004"
+                "fullName": "Burch Smith",
+                "id": 572143,
+                "link": "/api/v1/people/572143"
               },
               "right": {
-                "fullName": "Andrew McCutchen",
-                "id": 457705,
-                "link": "/api/v1/people/457705"
+                "fullName": "Wenceel P\u00e9rez",
+                "id": 672761,
+                "link": "/api/v1/people/672761"
               },
               "second": {
-                "fullName": "Josh Smith",
-                "id": 669701,
-                "link": "/api/v1/people/669701"
+                "fullName": "Hao-Yu  Lee",
+                "id": 701678,
+                "link": "/api/v1/people/701678"
               },
               "shortstop": {
-                "fullName": "Corey Seager",
-                "id": 608369,
-                "link": "/api/v1/people/608369"
+                "fullName": "Zack Short",
+                "id": 670097,
+                "link": "/api/v1/people/670097"
               },
               "team": {
-                "id": 140,
-                "link": "/api/v1/teams/140",
-                "name": "Texas Rangers"
+                "id": 116,
+                "link": "/api/v1/teams/116",
+                "name": "Detroit Tigers"
               },
               "third": {
-                "fullName": "Josh Jung",
-                "id": 673962,
-                "link": "/api/v1/people/673962"
+                "fullName": "Kevin McGonigle",
+                "id": 805808,
+                "link": "/api/v1/people/805808"
               }
             },
-            "inningHalf": "Bottom",
-            "inningState": "Bottom",
+            "inningHalf": "Top",
+            "inningState": "Top",
             "innings": [
               {
                 "away": {
@@ -6538,62 +6539,89 @@
                 },
                 "home": {
                   "errors": 0,
-                  "hits": 1,
-                  "leftOnBase": 0
+                  "hits": 5,
+                  "leftOnBase": 1,
+                  "runs": 4
                 },
                 "num": 7,
                 "ordinalNum": "7th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 8,
+                "ordinalNum": "8th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0
+                },
+                "num": 9,
+                "ordinalNum": "9th"
               }
             ],
-            "isTopInning": false,
+            "isTopInning": true,
             "offense": {
               "batter": {
-                "fullName": "Hao-Yu  Lee",
-                "id": 701678,
-                "link": "/api/v1/people/701678"
+                "fullName": "Kyle Higashioka",
+                "id": 543309,
+                "link": "/api/v1/people/543309"
               },
-              "battingOrder": 8,
+              "battingOrder": 9,
               "inHole": {
-                "fullName": "Kevin McGonigle",
-                "id": 805808,
-                "link": "/api/v1/people/805808"
+                "fullName": "Alejandro Osuna",
+                "id": 696030,
+                "link": "/api/v1/people/696030"
               },
               "onDeck": {
-                "fullName": "Jake Rogers",
-                "id": 668670,
-                "link": "/api/v1/people/668670"
+                "fullName": "Brandon Nimmo",
+                "id": 607043,
+                "link": "/api/v1/people/607043"
               },
               "pitcher": {
-                "fullName": "Ricky Vanasco",
-                "id": 676568,
-                "link": "/api/v1/people/676568"
-              },
-              "second": {
-                "fullName": "Kerry Carpenter",
-                "id": 681481,
-                "link": "/api/v1/people/681481"
+                "fullName": "Gavin Collyer",
+                "id": 686560,
+                "link": "/api/v1/people/686560"
               },
               "team": {
-                "id": 116,
-                "link": "/api/v1/teams/116",
-                "name": "Detroit Tigers"
+                "id": 140,
+                "link": "/api/v1/teams/140",
+                "name": "Texas Rangers"
               }
             },
-            "outs": 2,
+            "outs": 3,
             "scheduledInnings": 9,
             "strikes": 2,
             "teams": {
               "away": {
                 "errors": 0,
-                "hits": 5,
-                "leftOnBase": 6,
+                "hits": 7,
+                "leftOnBase": 8,
                 "runs": 1
               },
               "home": {
                 "errors": 1,
-                "hits": 4,
-                "leftOnBase": 1,
-                "runs": 3
+                "hits": 8,
+                "leftOnBase": 2,
+                "runs": 7
               }
             }
           },
@@ -6608,18 +6636,19 @@
           "seriesDescription": "Regular Season",
           "seriesGameNumber": 3,
           "status": {
-            "abstractGameCode": "L",
-            "abstractGameState": "Live",
-            "codedGameState": "I",
-            "detailedState": "In Progress",
+            "abstractGameCode": "F",
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
             "startTimeTBD": false,
-            "statusCode": "I"
+            "statusCode": "F"
           },
           "teams": {
             "away": {
+              "isWinner": false,
               "leagueRecord": {
-                "losses": 17,
-                "pct": ".485",
+                "losses": 18,
+                "pct": ".471",
                 "wins": 16
               },
               "probablePitcher": {
@@ -6685,17 +6714,18 @@
               }
             },
             "home": {
+              "isWinner": true,
               "leagueRecord": {
                 "losses": 17,
-                "pct": ".500",
-                "wins": 17
+                "pct": ".514",
+                "wins": 18
               },
               "probablePitcher": {
                 "fullName": "Tyler Holton",
                 "id": 663947,
                 "link": "/api/v1/people/663947"
               },
-              "score": 3,
+              "score": 7,
               "seriesNumber": 11,
               "splitSquad": false,
               "springLeague": {
@@ -6763,12 +6793,12 @@
       ],
       "totalEvents": 0,
       "totalGames": 15,
-      "totalGamesInProgress": 1,
+      "totalGamesInProgress": 0,
       "totalItems": 15
     }
   ],
   "totalEvents": 0,
   "totalGames": 15,
-  "totalGamesInProgress": 1,
+  "totalGamesInProgress": 0,
   "totalItems": 15
 }

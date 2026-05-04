@@ -37,6 +37,13 @@ Refresh baseball data and generated content:
 npm run update:data
 ```
 
+For deterministic runs, pass the as-of date explicitly:
+
+```sh
+python3 scripts/build_all.py --date 2026-05-04
+TRACKER_AS_OF_DATE=2026-05-04 npm run validate:data
+```
+
 Run the local site:
 
 ```sh
@@ -66,6 +73,8 @@ The update flow is intentionally split:
 
 4. Future OpenClaw orchestration
    OpenClaw can later run the update, validate the build, commit changes, push to GitHub, and rely on the static host to deploy.
+
+See `docs/nightly-update-runbook.md` for the exact future nightly command sequence.
 
 ## Current Data Sources
 

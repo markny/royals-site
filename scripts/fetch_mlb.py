@@ -6,11 +6,10 @@ sources and writes normalized JSON files that the site and later LLM steps can
 consume.
 """
 
-from datetime import date
-
 from lib.io import now_iso, write_json
 from lib.mlb_api import MlbApiError, ROYALS_TEAM_ID, get_json
 from lib.paths import GENERATED_DIR, RAW_DIR, ensure_dirs
+from lib.run_context import season
 from lib.samples import (
     SAMPLE_GAME_LOG,
     SAMPLE_HITTING,
@@ -19,7 +18,7 @@ from lib.samples import (
     SAMPLE_STANDINGS,
 )
 
-SEASON = date.today().year
+SEASON = season()
 ROYALS_NAME = "Kansas City Royals"
 
 

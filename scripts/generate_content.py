@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 
 from lib.io import now_iso, read_json, write_json
 from lib.paths import GENERATED_DIR, RECAP_DIR, ensure_dirs
+from lib.run_context import as_of_date
 
 
 def latest_completed_game(games):
@@ -19,11 +20,11 @@ def latest_completed_game(games):
 
 
 def next_scheduled_game(games):
-    today = date.today().isoformat()
+    today = as_of_date().isoformat()
     for game in games:
         if game.get("result") == "TBD" and (game.get("date") or "") >= today:
             return game
-    return {"date": date.today().isoformat(), "opponent": "TBD", "time_local": "TBD"}
+    return {"date": as_of_date().isoformat(), "opponent": "TBD", "time_local": "TBD"}
 
 
 def build_season_summary(game_log, standings, hitting, pitching, prospects):
@@ -126,7 +127,7 @@ def build_recap_index(game_log, season_summary, statcast):
     latest = latest_completed_game(game_log.get("games", []))
     if not latest:
         latest = {
-            "date": date.today().isoformat(),
+            "date": as_of_date().isoformat(),
             "score": "No completed game",
             "matchup": "Royals schedule",
             "recap_slug": "sample-royals-recap",
