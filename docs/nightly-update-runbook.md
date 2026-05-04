@@ -21,6 +21,7 @@ For Monday, May 4, 2026:
 ```sh
 python3 scripts/build_all.py --date 2026-05-04
 TRACKER_AS_OF_DATE=2026-05-04 python3 scripts/validate_outputs.py
+npm run test:dates
 npm run build
 ```
 
@@ -29,6 +30,7 @@ For a normal nightly run, OpenClaw should compute the local Eastern date and pas
 ```sh
 python3 scripts/build_all.py --date "$RUN_DATE"
 TRACKER_AS_OF_DATE="$RUN_DATE" python3 scripts/validate_outputs.py
+npm run test:dates
 npm run build
 ```
 
@@ -72,6 +74,7 @@ When the local Gemma MLX server is added, insert it after deterministic data gen
 python3 scripts/build_all.py --date "$RUN_DATE"
 python3 scripts/generate_llm_recaps.py --date "$RUN_DATE"
 TRACKER_AS_OF_DATE="$RUN_DATE" python3 scripts/validate_outputs.py
+npm run test:dates
 npm run build
 ```
 
