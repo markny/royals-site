@@ -29,6 +29,7 @@ def main():
     require(GENERATED_DIR / "hitting-sabermetrics.json")
     require(GENERATED_DIR / "pitching-stats.json")
     require(GENERATED_DIR / "latest-game-details.json")
+    require(GENERATED_DIR / "latest-game-highlights.json")
     require(GENERATED_DIR / "scoreboard.json")
     prospects = require(GENERATED_DIR / "prospects.json")
     recaps = require(RECAP_DIR / "index.json")
@@ -46,6 +47,19 @@ def main():
         fail("prospect list is empty")
     if not recaps.get("items"):
         fail("recap index is empty")
+
+    forbidden_public_phrases = ["local pipeline", "local LLM", "Gemma", "OpenClaw", "placeholder", "template"]
+    public_text = " ".join(
+        [
+            season.get("nightly_recap", ""),
+            season.get("player_of_game", {}).get("reason", ""),
+            recaps.get("items", [{}])[0].get("summary", ""),
+            recaps.get("items", [{}])[0].get("statcast_observation", ""),
+        ]
+    )
+    for phrase in forbidden_public_phrases:
+        if phrase.lower() in public_text.lower():
+            fail(f"public copy contains forbidden phrase: {phrase}")
 
     print("Generated data validation passed.")
 

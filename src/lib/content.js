@@ -6,6 +6,7 @@ import sabermetrics from '../../data/generated/hitting-sabermetrics.json';
 import pitching from '../../data/generated/pitching-stats.json';
 import statcast from '../../data/generated/statcast-metrics.json';
 import latestGameDetails from '../../data/generated/latest-game-details.json';
+import latestGameHighlights from '../../data/generated/latest-game-highlights.json';
 import scoreboard from '../../data/generated/scoreboard.json';
 import prospects from '../../data/generated/prospects.json';
 import recapIndex from '../../content/recaps/index.json';
@@ -19,6 +20,7 @@ export const data = {
   pitching,
   statcast,
   latestGameDetails,
+  latestGameHighlights,
   scoreboard,
   prospects,
   recaps: recapIndex,

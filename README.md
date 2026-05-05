@@ -75,11 +75,12 @@ The update flow is intentionally split:
    OpenClaw can later run the update, validate the build, commit changes, push to GitHub, and rely on the static host to deploy.
 
 See `docs/nightly-update-runbook.md` for the exact future nightly command sequence.
+See `docs/nightly-prose-contract.md` for the public-facing recap fields OpenClaw/Gemma may rewrite.
 
 ## Current Data Sources
 
 - MLB schedule, standings, hitting, and pitching stats use the public MLB Stats API.
-- MLB sabermetrics, latest-game box scores, play-by-play batted-ball data, and the daily MLB scoreboard use the public MLB Stats API.
+- MLB sabermetrics, latest-game box scores, play-by-play batted-ball data, short highlight clips, and the daily MLB scoreboard use the public MLB Stats API.
 - Season-long Baseball Savant data is represented by a placeholder JSON layer for now.
 - Prospect tracking uses a curated watchlist in `data/prospects/watchlist.json`, then fetches season and last-7-game MiLB performance from the MLB Stats API.
 

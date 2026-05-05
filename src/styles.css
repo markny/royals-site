@@ -450,3 +450,60 @@ td {
   color: rgb(71 85 105);
   font-size: 0.86rem;
 }
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.8rem;
+}
+
+.highlight-card {
+  display: flex;
+  min-height: 7rem;
+  gap: 0.8rem;
+  align-items: flex-start;
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+  background: rgb(248 250 252);
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.highlight-card:hover {
+  border-color: rgb(37 99 235);
+  background: rgb(239 246 255);
+  transform: translateY(-1px);
+}
+
+.highlight-card strong,
+.highlight-card small {
+  display: block;
+}
+
+.highlight-card strong {
+  color: rgb(15 23 42);
+  font-weight: 950;
+}
+
+.highlight-card small {
+  margin-top: 0.35rem;
+  color: rgb(71 85 105);
+  line-height: 1.45;
+}
+
+.play-icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgb(29 78 216);
+  color: white;
+}

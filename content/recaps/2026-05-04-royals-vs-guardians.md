@@ -5,16 +5,16 @@ source: "deterministic-template"
 llm_ready: true
 ---
 
-KC 6, CLE 2 is indexed as the latest completed Royals result. This template keeps the recap factual until a local LLM adds nightly color.
+The Royals beat the Cleveland Guardians, KC 6, CLE 2. Michael Wacha led the night, working 7.0 innings with 2 earned runs, 3 strikeouts and 1 walk. Bobby Witt Jr. supplied the loudest Royals contact at 107.1 mph.
 
 ## Key Performers
 
-- Kyle Isbel
-- Kris Bubic
+- Michael Wacha
+- Bobby Witt Jr.
 
 ## Statcast Notes
 
-Placeholder until Savant ingestion is wired.
+Bobby Witt Jr. produced the hardest tracked Royals contact: 107.1 mph at a 32.0 degree launch angle.
 
 ## Standings Implication
 

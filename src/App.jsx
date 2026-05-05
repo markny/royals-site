@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Activity, ChevronRight, Flame, Gauge, Sparkles, TrendingUp } from 'lucide-react';
+import { Activity, ChevronRight, Flame, Gauge, Play, Sparkles, TrendingUp } from 'lucide-react';
 import DataTable from './components/DataTable.jsx';
 import Shell from './components/Shell.jsx';
 import StatCard from './components/StatCard.jsx';
@@ -131,6 +131,32 @@ function HomePage({ onNavigate }) {
               ))}
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">MLB Video</p>
+          <h2>Short Highlights</h2>
+        </div>
+        <div className="highlight-grid">
+          {(data.latestGameHighlights.highlights ?? []).slice(0, 4).map((clip) => (
+            <a
+              key={clip.id ?? clip.playback_url}
+              className="highlight-card"
+              href={clip.playback_url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="play-icon">
+                <Play size={17} fill="currentColor" />
+              </span>
+              <span>
+                <strong>{clip.title}</strong>
+                {clip.description ? <small>{clip.description}</small> : null}
+              </span>
+            </a>
+          ))}
         </div>
       </section>
     </div>

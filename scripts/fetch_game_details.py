@@ -104,6 +104,81 @@ def batted_balls(play_by_play):
     return balls, batter_summary
 
 
+def playback_url(item):
+    preferred = ["mp4Avc", "HTTP_CLOUD_WIRED", "HTTP_CLOUD_WIRED_60", "hlsCloud"]
+    playbacks = item.get("playbacks", [])
+    for name in preferred:
+        for playback in playbacks:
+            if playback.get("name") == name and playback.get("url"):
+                return playback["url"], name
+    for playback in playbacks:
+        if playback.get("url"):
+            return playback["url"], playback.get("name")
+    return None, None
+
+
+def is_short_play_highlight(item):
+    text = f"{item.get('title', '')} {item.get('description', '')}".lower()
+    blocked = [
+        "condensed game",
+        "game recap",
+        "full game",
+        "extended highlights",
+        "strong outing leads",
+    ]
+    if any(term in text for term in blocked):
+        return False
+    wanted = [
+        "home run",
+        "homer",
+        "rbi",
+        "double",
+        "triple",
+        "single",
+        "strikeout",
+        "strikes out",
+        "k's",
+        "catch",
+        "diving",
+        "rob",
+        "throw",
+        "steal",
+        "scores",
+    ]
+    return any(term in text for term in wanted)
+
+
+def normalize_highlights(content, limit=6):
+    items = (
+        content.get("highlights", {})
+        .get("highlights", {})
+        .get("items", [])
+    )
+    highlights = []
+    for item in items:
+        if not is_short_play_highlight(item):
+            continue
+        url, playback_type = playback_url(item)
+        if not url:
+            continue
+        highlights.append(
+            {
+                "id": item.get("id") or item.get("guid") or item.get("slug"),
+                "title": item.get("title", "Highlight"),
+                "description": item.get("description") or "",
+                "date": item.get("date"),
+                "duration": item.get("duration"),
+                "playback_url": url,
+                "playback_type": playback_type,
+                "mlb_url": item.get("url"),
+                "image_url": item.get("image", {}).get("cuts", [{}])[0].get("src")
+                if item.get("image", {}).get("cuts")
+                else None,
+            }
+        )
+    return highlights[:limit]
+
+
 def fetch_latest_game_details():
     game_log = read_json(GENERATED_DIR / "game-log.json", {"games": []})
     latest = latest_completed_game(game_log.get("games", []))
@@ -135,6 +210,22 @@ def fetch_latest_game_details():
             "hardest": hardest_balls[:12],
             "by_batter": batter_summary[:12],
         },
+    }
+
+
+def fetch_latest_game_highlights():
+    game_log = read_json(GENERATED_DIR / "game-log.json", {"games": []})
+    latest = latest_completed_game(game_log.get("games", []))
+    if not latest:
+        raise MlbApiError("No completed Royals game available for highlights")
+    content = get_json(f"/game/{latest['game_pk']}/content", {"highlightLimit": 20})
+    write_json(RAW_DIR / f"game-content-{latest['game_pk']}.json", content)
+    return {
+        "source": "mlb-stats-api",
+        "generated_at": now_iso(),
+        "game": latest,
+        "filter": "Short play clips only; condensed games and full-game recaps excluded.",
+        "highlights": normalize_highlights(content),
     }
 
 
@@ -180,6 +271,13 @@ def main():
         write_json(
             GENERATED_DIR / "latest-game-details.json",
             {"source": "fallback", "generated_at": now_iso(), "fallback_reason": str(exc)},
+        )
+    try:
+        write_json(GENERATED_DIR / "latest-game-highlights.json", fetch_latest_game_highlights())
+    except MlbApiError as exc:
+        write_json(
+            GENERATED_DIR / "latest-game-highlights.json",
+            {"source": "fallback", "generated_at": now_iso(), "fallback_reason": str(exc), "highlights": []},
         )
     write_json(GENERATED_DIR / "scoreboard.json", fetch_scoreboard())
 

@@ -43,6 +43,7 @@ npm run build
 - `data/generated/hitting-sabermetrics.json`
 - `data/generated/pitching-stats.json`
 - `data/generated/latest-game-details.json`
+- `data/generated/latest-game-highlights.json`
 - `data/generated/scoreboard.json`
 - `data/generated/prospects.json`
 - `content/recaps/index.json`
@@ -79,3 +80,5 @@ npm run build
 ```
 
 The LLM should write prose only to `content/recaps` and approved summary fields in `data/generated/season-summary.json`.
+
+Use `docs/nightly-prose-contract.md` for field ownership, style, and safety rules.
