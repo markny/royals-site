@@ -192,6 +192,154 @@ function GameLogPage() {
   );
 }
 
+function displayRun(value) {
+  return value === null || value === undefined ? '-' : value;
+}
+
+function LineScore({ gameDetails }) {
+  const innings = gameDetails.line_score?.innings ?? [];
+  const totals = gameDetails.line_score?.totals ?? {};
+  const game = gameDetails.game ?? {};
+  const rows = [
+    { key: 'opponent', label: game.opponent ?? 'Opponent' },
+    { key: 'royals', label: 'Royals' },
+  ];
+
+  return (
+    <div className="table-frame box-table-frame">
+      <table className="box-table line-score-table">
+        <thead>
+          <tr>
+            <th>Team</th>
+            {innings.map((inning) => (
+              <th key={inning.inning}>{inning.label}</th>
+            ))}
+            <th>R</th>
+            <th>H</th>
+            <th>E</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.key}>
+              <td className="team-cell">{row.label}</td>
+              {innings.map((inning) => (
+                <td key={`${row.key}-${inning.inning}`}>{displayRun(inning[row.key])}</td>
+              ))}
+              <td>{totals[row.key]?.runs ?? '-'}</td>
+              <td>{totals[row.key]?.hits ?? '-'}</td>
+              <td>{totals[row.key]?.errors ?? '-'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function TraditionalTable({ title, type, rows, totals }) {
+  const battingColumns = ['player', 'ab', 'r', 'h', 'rbi', 'bb', 'so', 'lob'];
+  const pitchingColumns = ['player', 'ip', 'h', 'r', 'er', 'bb', 'so', 'hr', 'pitches'];
+  const columns = type === 'batting' ? battingColumns : pitchingColumns;
+  const labels = {
+    player: type === 'batting' ? 'Batters' : 'Pitchers',
+    ab: 'AB',
+    r: 'R',
+    h: 'H',
+    rbi: 'RBI',
+    bb: 'BB',
+    so: 'SO',
+    lob: 'LOB',
+    ip: 'IP',
+    er: 'ER',
+    hr: 'HR',
+    pitches: 'P',
+  };
+
+  return (
+    <section className="boxscore-team-block">
+      <h3>{title}</h3>
+      <div className="table-frame box-table-frame">
+        <table className="box-table">
+          <thead>
+            <tr>
+              {columns.map((column) => (
+                <th key={column}>{labels[column]}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row) => (
+              <tr key={row.player}>
+                {columns.map((column) => (
+                  <td key={column} className={column === 'player' ? 'player-cell' : ''}>
+                    {row[column] ?? '-'}
+                  </td>
+                ))}
+              </tr>
+            ))}
+            <tr className="totals-row">
+              {columns.map((column) => (
+                <td key={column} className={column === 'player' ? 'player-cell' : ''}>
+                  {column === 'player' ? 'Totals' : totals?.[column] ?? ''}
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function BoxScorePage() {
+  const gameDetails = data.latestGameDetails;
+  const game = gameDetails.game ?? {};
+  const opponentName = game.opponent ?? 'Opponent';
+
+  return (
+    <div className="space-y-6">
+      <section className="content-section">
+        <div className="section-heading">
+          <p className="eyebrow">Latest Completed Game</p>
+          <h2>{game.matchup ?? 'Royals Box Score'}</h2>
+          <p className="section-kicker">
+            {formatDate(game.date, { weekday: 'short', year: 'numeric' })} · {game.score} · {game.venue}
+          </p>
+        </div>
+        <LineScore gameDetails={gameDetails} />
+      </section>
+
+      <section className="boxscore-grid">
+        <TraditionalTable
+          title={`${opponentName} Batting`}
+          type="batting"
+          rows={gameDetails.opponent_boxscore?.batting ?? []}
+          totals={gameDetails.opponent_boxscore?.batting_totals}
+        />
+        <TraditionalTable
+          title="Royals Batting"
+          type="batting"
+          rows={gameDetails.royals_boxscore?.batting ?? []}
+          totals={gameDetails.royals_boxscore?.batting_totals}
+        />
+        <TraditionalTable
+          title={`${opponentName} Pitching`}
+          type="pitching"
+          rows={gameDetails.opponent_boxscore?.pitching ?? []}
+          totals={gameDetails.opponent_boxscore?.pitching_totals}
+        />
+        <TraditionalTable
+          title="Royals Pitching"
+          type="pitching"
+          rows={gameDetails.royals_boxscore?.pitching ?? []}
+          totals={gameDetails.royals_boxscore?.pitching_totals}
+        />
+      </section>
+    </div>
+  );
+}
+
 function StatsPage() {
   const hittingColumns = [
     { key: 'player', label: 'Hitter' },
@@ -391,6 +539,7 @@ export default function App() {
   const pages = {
     home: <HomePage onNavigate={setActivePage} />,
     games: <GameLogPage />,
+    box: <BoxScorePage />,
     stats: <StatsPage />,
     prospects: <ProspectPage />,
     standings: <StandingsPage />,

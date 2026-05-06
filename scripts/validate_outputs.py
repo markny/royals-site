@@ -28,7 +28,7 @@ def main():
     require(GENERATED_DIR / "hitting-stats.json")
     require(GENERATED_DIR / "hitting-sabermetrics.json")
     require(GENERATED_DIR / "pitching-stats.json")
-    require(GENERATED_DIR / "latest-game-details.json")
+    game_details = require(GENERATED_DIR / "latest-game-details.json")
     require(GENERATED_DIR / "latest-game-highlights.json")
     require(GENERATED_DIR / "scoreboard.json")
     prospects = require(GENERATED_DIR / "prospects.json")
@@ -47,6 +47,13 @@ def main():
         fail("prospect list is empty")
     if not recaps.get("items"):
         fail("recap index is empty")
+    if not game_details.get("line_score", {}).get("innings"):
+        fail("latest-game-details line_score innings are missing")
+    for side in ["royals_boxscore", "opponent_boxscore"]:
+        if not game_details.get(side, {}).get("batting"):
+            fail(f"{side} batting rows are missing")
+        if not game_details.get(side, {}).get("pitching"):
+            fail(f"{side} pitching rows are missing")
 
     forbidden_public_phrases = ["local pipeline", "local LLM", "Gemma", "OpenClaw", "placeholder", "template"]
     public_text = " ".join(

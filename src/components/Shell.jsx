@@ -1,8 +1,9 @@
-import { BarChart3, CalendarDays, Home, Medal, Newspaper, Table2 } from 'lucide-react';
+import { BarChart3, CalendarDays, ClipboardList, Home, Medal, Newspaper, Table2 } from 'lucide-react';
 
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
   { id: 'games', label: 'Games', icon: CalendarDays },
+  { id: 'box', label: 'Box', icon: ClipboardList },
   { id: 'stats', label: 'Stats', icon: Table2 },
   { id: 'prospects', label: 'Prospects', icon: Medal },
   { id: 'standings', label: 'Standings', icon: BarChart3 },

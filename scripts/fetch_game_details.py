@@ -31,6 +31,10 @@ def batting_rows(team_box):
                 "rbi": stats.get("rbi", 0),
                 "bb": stats.get("baseOnBalls", 0),
                 "so": stats.get("strikeOuts", 0),
+                "lob": stats.get("leftOnBase", 0),
+                "doubles": stats.get("doubles", 0),
+                "triples": stats.get("triples", 0),
+                "hr": stats.get("homeRuns", 0),
             }
         )
     return rows
@@ -53,10 +57,59 @@ def pitching_rows(team_box):
                 "er": stats.get("earnedRuns", 0),
                 "bb": stats.get("baseOnBalls", 0),
                 "so": stats.get("strikeOuts", 0),
+                "hr": stats.get("homeRuns", 0),
                 "pitches": stats.get("numberOfPitches", 0),
             }
         )
     return rows
+
+
+def batting_totals(team_box):
+    stats = team_box.get("teamStats", {}).get("batting", {})
+    return {
+        "ab": stats.get("atBats", 0),
+        "r": stats.get("runs", 0),
+        "h": stats.get("hits", 0),
+        "rbi": stats.get("rbi", 0),
+        "bb": stats.get("baseOnBalls", 0),
+        "so": stats.get("strikeOuts", 0),
+        "lob": stats.get("leftOnBase", 0),
+    }
+
+
+def pitching_totals(team_box):
+    stats = team_box.get("teamStats", {}).get("pitching", {})
+    return {
+        "ip": stats.get("inningsPitched", "0.0"),
+        "h": stats.get("hits", 0),
+        "r": stats.get("runs", 0),
+        "er": stats.get("earnedRuns", 0),
+        "bb": stats.get("baseOnBalls", 0),
+        "so": stats.get("strikeOuts", 0),
+        "hr": stats.get("homeRuns", 0),
+        "pitches": stats.get("numberOfPitches", 0),
+    }
+
+
+def normalize_linescore(linescore, latest):
+    is_royals_home = latest.get("home_away") == "home"
+    royals_side = "home" if is_royals_home else "away"
+    opponent_side = "away" if is_royals_home else "home"
+    return {
+        "innings": [
+            {
+                "inning": inning.get("num"),
+                "label": str(inning.get("num")),
+                "royals": inning.get(royals_side, {}).get("runs"),
+                "opponent": inning.get(opponent_side, {}).get("runs"),
+            }
+            for inning in linescore.get("innings", [])
+        ],
+        "totals": {
+            "royals": linescore.get("teams", {}).get(royals_side, {}),
+            "opponent": linescore.get("teams", {}).get(opponent_side, {}),
+        },
+    }
 
 
 def batted_balls(play_by_play):
@@ -187,8 +240,10 @@ def fetch_latest_game_details():
 
     boxscore = get_json(f"/game/{latest['game_pk']}/boxscore")
     play_by_play = get_json(f"/game/{latest['game_pk']}/playByPlay")
+    linescore = get_json(f"/game/{latest['game_pk']}/linescore")
     write_json(RAW_DIR / f"boxscore-{latest['game_pk']}.json", boxscore)
     write_json(RAW_DIR / f"play-by-play-{latest['game_pk']}.json", play_by_play)
+    write_json(RAW_DIR / f"linescore-{latest['game_pk']}.json", linescore)
 
     royals_side = "home" if latest.get("home_away") == "home" else "away"
     opponent_side = "away" if royals_side == "home" else "home"
@@ -198,13 +253,18 @@ def fetch_latest_game_details():
         "source": "mlb-stats-api",
         "generated_at": now_iso(),
         "game": latest,
+        "line_score": normalize_linescore(linescore, latest),
         "royals_boxscore": {
             "batting": batting_rows(boxscore.get("teams", {}).get(royals_side, {})),
             "pitching": pitching_rows(boxscore.get("teams", {}).get(royals_side, {})),
+            "batting_totals": batting_totals(boxscore.get("teams", {}).get(royals_side, {})),
+            "pitching_totals": pitching_totals(boxscore.get("teams", {}).get(royals_side, {})),
         },
         "opponent_boxscore": {
             "batting": batting_rows(boxscore.get("teams", {}).get(opponent_side, {})),
             "pitching": pitching_rows(boxscore.get("teams", {}).get(opponent_side, {})),
+            "batting_totals": batting_totals(boxscore.get("teams", {}).get(opponent_side, {})),
+            "pitching_totals": pitching_totals(boxscore.get("teams", {}).get(opponent_side, {})),
         },
         "batted_balls": {
             "hardest": hardest_balls[:12],

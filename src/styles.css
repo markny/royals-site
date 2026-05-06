@@ -236,6 +236,12 @@ button {
   font-weight: 950;
 }
 
+.section-kicker {
+  margin: 0.35rem 0 0;
+  color: rgb(71 85 105);
+  font-weight: 750;
+}
+
 .table-frame {
   overflow-x: auto;
   border: 1px solid rgb(226 232 240);
@@ -506,4 +512,64 @@ td {
   border-radius: 999px;
   background: rgb(29 78 216);
   color: white;
+}
+
+.boxscore-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.boxscore-team-block {
+  border: 1px solid rgb(226 232 240);
+  border-radius: 0.5rem;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.boxscore-team-block h3 {
+  margin: 0 0 0.8rem;
+  color: rgb(15 23 42);
+  font-size: 1.05rem;
+  font-weight: 950;
+}
+
+.box-table-frame {
+  border-radius: 0.4rem;
+}
+
+.box-table {
+  min-width: 760px;
+}
+
+.line-score-table {
+  min-width: 620px;
+}
+
+.box-table th {
+  padding: 0.7rem 0.65rem;
+  font-weight: 950;
+}
+
+.box-table td {
+  padding: 0.65rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.box-table th:first-child,
+.box-table td:first-child {
+  text-align: left;
+}
+
+.player-cell,
+.team-cell {
+  color: rgb(15 23 42);
+  font-weight: 850;
+}
+
+.totals-row td {
+  border-top: 2px solid rgb(203 213 225);
+  background: rgb(248 250 252);
+  font-weight: 950;
 }
