@@ -8822,7 +8822,7 @@
     {
       "about": {
         "atBatIndex": 20,
-        "captivatingIndex": 33,
+        "captivatingIndex": 0,
         "endTime": "2026-05-11T00:04:58.906Z",
         "halfInning": "top",
         "hasOut": false,
@@ -9037,9 +9037,9 @@
       ],
       "result": {
         "awayScore": 3,
-        "description": "Jahmai Jones singles on a ground ball to third baseman Maikel Garcia.",
-        "event": "Single",
-        "eventType": "single",
+        "description": "Jahmai Jones reaches on a throwing error by third baseman Maikel Garcia.",
+        "event": "Field Error",
+        "eventType": "field_error",
         "homeScore": 0,
         "isOut": false,
         "rbi": 0,
@@ -9052,7 +9052,7 @@
         {
           "credits": [
             {
-              "credit": "f_fielded_ball",
+              "credit": "f_throwing_error",
               "player": {
                 "id": 672580,
                 "link": "/api/v1/people/672580"
@@ -9067,8 +9067,8 @@
           ],
           "details": {
             "earned": false,
-            "event": "Single",
-            "eventType": "single",
+            "event": "Field Error",
+            "eventType": "field_error",
             "isScoringEvent": false,
             "movementReason": null,
             "playIndex": 1,
@@ -34335,91 +34335,6 @@
               "splits": [
                 {
                   "stat": {
-                    "name": "battingAverage",
-                    "zones": [
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000",
-                        "zone": "01"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".333",
-                        "zone": "02"
-                      },
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000",
-                        "zone": "03"
-                      },
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000",
-                        "zone": "04"
-                      },
-                      {
-                        "color": "rgba(255, 255, 255, 0.55)",
-                        "temp": "lukewarm",
-                        "value": ".222",
-                        "zone": "05"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".400",
-                        "zone": "06"
-                      },
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000",
-                        "zone": "07"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".400",
-                        "zone": "08"
-                      },
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".167",
-                        "zone": "09"
-                      },
-                      {
-                        "color": "rgba(6, 90, 238, .55)",
-                        "temp": "cold",
-                        "value": ".000",
-                        "zone": "11"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": "1.000",
-                        "zone": "12"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".500",
-                        "zone": "13"
-                      },
-                      {
-                        "color": "rgba(214, 41, 52, .55)",
-                        "temp": "hot",
-                        "value": ".333",
-                        "zone": "14"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "stat": {
                     "name": "exitVelocity",
                     "zones": [
                       {
@@ -34498,6 +34413,91 @@
                         "color": "rgba(255, 255, 255, 0.55)",
                         "temp": "lukewarm",
                         "value": "88.00",
+                        "zone": "14"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "stat": {
+                    "name": "battingAverage",
+                    "zones": [
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000",
+                        "zone": "01"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": ".333",
+                        "zone": "02"
+                      },
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000",
+                        "zone": "03"
+                      },
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000",
+                        "zone": "04"
+                      },
+                      {
+                        "color": "rgba(255, 255, 255, 0.55)",
+                        "temp": "lukewarm",
+                        "value": ".222",
+                        "zone": "05"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": ".400",
+                        "zone": "06"
+                      },
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000",
+                        "zone": "07"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": ".400",
+                        "zone": "08"
+                      },
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".167",
+                        "zone": "09"
+                      },
+                      {
+                        "color": "rgba(6, 90, 238, .55)",
+                        "temp": "cold",
+                        "value": ".000",
+                        "zone": "11"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": "1.000",
+                        "zone": "12"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": ".500",
+                        "zone": "13"
+                      },
+                      {
+                        "color": "rgba(214, 41, 52, .55)",
+                        "temp": "hot",
+                        "value": ".333",
                         "zone": "14"
                       }
                     ]
@@ -35245,91 +35245,6 @@
             "splits": [
               {
                 "stat": {
-                  "name": "battingAverage",
-                  "zones": [
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000",
-                      "zone": "01"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".333",
-                      "zone": "02"
-                    },
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000",
-                      "zone": "03"
-                    },
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000",
-                      "zone": "04"
-                    },
-                    {
-                      "color": "rgba(255, 255, 255, 0.55)",
-                      "temp": "lukewarm",
-                      "value": ".222",
-                      "zone": "05"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".400",
-                      "zone": "06"
-                    },
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000",
-                      "zone": "07"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".400",
-                      "zone": "08"
-                    },
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".167",
-                      "zone": "09"
-                    },
-                    {
-                      "color": "rgba(6, 90, 238, .55)",
-                      "temp": "cold",
-                      "value": ".000",
-                      "zone": "11"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": "1.000",
-                      "zone": "12"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".500",
-                      "zone": "13"
-                    },
-                    {
-                      "color": "rgba(214, 41, 52, .55)",
-                      "temp": "hot",
-                      "value": ".333",
-                      "zone": "14"
-                    }
-                  ]
-                }
-              },
-              {
-                "stat": {
                   "name": "exitVelocity",
                   "zones": [
                     {
@@ -35408,6 +35323,91 @@
                       "color": "rgba(255, 255, 255, 0.55)",
                       "temp": "lukewarm",
                       "value": "88.00",
+                      "zone": "14"
+                    }
+                  ]
+                }
+              },
+              {
+                "stat": {
+                  "name": "battingAverage",
+                  "zones": [
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000",
+                      "zone": "01"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": ".333",
+                      "zone": "02"
+                    },
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000",
+                      "zone": "03"
+                    },
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000",
+                      "zone": "04"
+                    },
+                    {
+                      "color": "rgba(255, 255, 255, 0.55)",
+                      "temp": "lukewarm",
+                      "value": ".222",
+                      "zone": "05"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": ".400",
+                      "zone": "06"
+                    },
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000",
+                      "zone": "07"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": ".400",
+                      "zone": "08"
+                    },
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".167",
+                      "zone": "09"
+                    },
+                    {
+                      "color": "rgba(6, 90, 238, .55)",
+                      "temp": "cold",
+                      "value": ".000",
+                      "zone": "11"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": "1.000",
+                      "zone": "12"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": ".500",
+                      "zone": "13"
+                    },
+                    {
+                      "color": "rgba(214, 41, 52, .55)",
+                      "temp": "hot",
+                      "value": ".333",
                       "zone": "14"
                     }
                   ]
@@ -36617,7 +36617,7 @@
               "x": 102.33,
               "y": 170.34
             },
-            "description": "Single",
+            "description": "Field Error",
             "inning": 3,
             "pitcher": {
               "fullName": "Noah Cameron",
@@ -36636,7 +36636,7 @@
                 "name": "Grapefruit League"
               }
             },
-            "type": "H"
+            "type": "E"
           },
           {
             "batter": {

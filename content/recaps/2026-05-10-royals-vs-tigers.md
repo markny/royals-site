@@ -18,4 +18,4 @@ Jac Caglianone produced the hardest tracked Royals contact: 111.9 mph at a 8.0 d
 
 ## Standings Implication
 
-1.5 GB in the AL Central
+2.0 GB in the AL Central
