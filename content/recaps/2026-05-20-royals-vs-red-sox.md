@@ -18,4 +18,4 @@ Bobby Witt Jr. produced the hardest tracked Royals contact: 113.3 mph at a 14.0 
 
 ## Standings Implication
 
-8.5 GB in the AL Central
+9.0 GB in the AL Central
