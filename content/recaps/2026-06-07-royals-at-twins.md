@@ -18,4 +18,4 @@ Maikel Garcia produced the hardest tracked Royals contact: 108.9 mph at a 13.0 d
 
 ## Standings Implication
 
-9.5 GB in the AL Central
+9.0 GB in the AL Central
