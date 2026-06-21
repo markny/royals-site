@@ -18,4 +18,4 @@ Salvador Perez produced the hardest tracked Royals contact: 110.7 mph at a 16.0 
 
 ## Standings Implication
 
-8.5 GB in the AL Central
+9.0 GB in the AL Central
