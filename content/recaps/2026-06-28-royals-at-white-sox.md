@@ -18,4 +18,4 @@ Isaac Collins produced the hardest tracked Royals contact: 110.4 mph at a -15.0 
 
 ## Standings Implication
 
-9.5 GB in the AL Central
+10.0 GB in the AL Central
