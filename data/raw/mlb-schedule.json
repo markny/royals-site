@@ -29711,11 +29711,6 @@
                 "link": "/api/v1/people/686797"
               },
               "battingOrder": 2,
-              "first": {
-                "fullName": "Byron Buxton",
-                "id": 621439,
-                "link": "/api/v1/people/621439"
-              },
               "inHole": {
                 "fullName": "Austin Martin",
                 "id": 668885,
@@ -29731,11 +29726,6 @@
                 "id": 664875,
                 "link": "/api/v1/people/664875"
               },
-              "second": {
-                "fullName": "Orlando Arcia",
-                "id": 606115,
-                "link": "/api/v1/people/606115"
-              },
               "team": {
                 "id": 142,
                 "link": "/api/v1/teams/142",
@@ -29749,14 +29739,12 @@
               "away": {
                 "errors": 0,
                 "hits": 12,
-                "isWinner": true,
                 "leftOnBase": 12,
                 "runs": 8
               },
               "home": {
                 "errors": 2,
                 "hits": 9,
-                "isWinner": false,
                 "leftOnBase": 5,
                 "runs": 6
               }
@@ -36325,14 +36313,12 @@
               "away": {
                 "errors": 1,
                 "hits": 8,
-                "isWinner": false,
                 "leftOnBase": 4,
                 "runs": 5
               },
               "home": {
                 "errors": 0,
                 "hits": 9,
-                "isWinner": true,
                 "leftOnBase": 5,
                 "runs": 6
               }
@@ -36778,20 +36764,10 @@
                 "id": 694360,
                 "link": "/api/v1/people/694360"
               },
-              "second": {
-                "fullName": "Lane Thomas",
-                "id": 657041,
-                "link": "/api/v1/people/657041"
-              },
               "team": {
                 "id": 118,
                 "link": "/api/v1/teams/118",
                 "name": "Kansas City Royals"
-              },
-              "third": {
-                "fullName": "Michael Massey",
-                "id": 686681,
-                "link": "/api/v1/people/686681"
               }
             },
             "outs": 3,
@@ -36801,14 +36777,12 @@
               "away": {
                 "errors": 1,
                 "hits": 16,
-                "isWinner": true,
                 "leftOnBase": 9,
                 "runs": 12
               },
               "home": {
                 "errors": 0,
                 "hits": 12,
-                "isWinner": false,
                 "leftOnBase": 8,
                 "runs": 10
               }
@@ -42162,26 +42136,271 @@
           "ifNecessary": "N",
           "ifNecessaryDescription": "Normal Game",
           "inningBreakLength": 120,
+          "isTie": false,
           "linescore": {
+            "balls": 2,
+            "currentInning": 9,
+            "currentInningOrdinal": "9th",
             "defense": {
+              "batter": {
+                "fullName": "Kameron Misner",
+                "id": 670224,
+                "link": "/api/v1/people/670224"
+              },
+              "battingOrder": 8,
+              "catcher": {
+                "fullName": "Carter Jensen",
+                "id": 695600,
+                "link": "/api/v1/people/695600"
+              },
+              "center": {
+                "fullName": "Lane Thomas",
+                "id": 657041,
+                "link": "/api/v1/people/657041"
+              },
+              "first": {
+                "fullName": "Jac Caglianone",
+                "id": 695506,
+                "link": "/api/v1/people/695506"
+              },
+              "inHole": {
+                "fullName": "Carter Jensen",
+                "id": 695600,
+                "link": "/api/v1/people/695600"
+              },
+              "left": {
+                "fullName": "Isaac Collins",
+                "id": 686555,
+                "link": "/api/v1/people/686555"
+              },
+              "onDeck": {
+                "fullName": "Isaac Collins",
+                "id": 686555,
+                "link": "/api/v1/people/686555"
+              },
+              "pitcher": {
+                "fullName": "Alex Lange",
+                "id": 656638,
+                "link": "/api/v1/people/656638"
+              },
+              "right": {
+                "fullName": "Kameron Misner",
+                "id": 670224,
+                "link": "/api/v1/people/670224"
+              },
+              "second": {
+                "fullName": "Nick Loftin",
+                "id": 679845,
+                "link": "/api/v1/people/679845"
+              },
+              "shortstop": {
+                "fullName": "Bobby Witt Jr.",
+                "id": 677951,
+                "link": "/api/v1/people/677951"
+              },
               "team": {
                 "id": 118,
                 "link": "/api/v1/teams/118",
                 "name": "Kansas City Royals"
+              },
+              "third": {
+                "fullName": "Josh Rojas",
+                "id": 668942,
+                "link": "/api/v1/people/668942"
               }
             },
-            "innings": [],
+            "inningHalf": "Top",
+            "inningState": "Top",
+            "innings": [
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 3,
+                  "leftOnBase": 1,
+                  "runs": 2
+                },
+                "num": 1,
+                "ordinalNum": "1st"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 2,
+                  "runs": 0
+                },
+                "num": 2,
+                "ordinalNum": "2nd"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 3,
+                "ordinalNum": "3rd"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 4,
+                "ordinalNum": "4th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 1
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 1
+                },
+                "num": 5,
+                "ordinalNum": "5th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 2,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 6,
+                "ordinalNum": "6th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 1
+                },
+                "home": {
+                  "errors": 1,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 7,
+                "ordinalNum": "7th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 2
+                },
+                "num": 8,
+                "ordinalNum": "8th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0
+                },
+                "num": 9,
+                "ordinalNum": "9th"
+              }
+            ],
+            "isTopInning": true,
             "offense": {
+              "batter": {
+                "fullName": "Gabriel Rincones Jr.",
+                "id": 687282,
+                "link": "/api/v1/people/687282"
+              },
+              "battingOrder": 7,
+              "inHole": {
+                "fullName": "Garrett Stubbs",
+                "id": 596117,
+                "link": "/api/v1/people/596117"
+              },
+              "onDeck": {
+                "fullName": "Justin Crawford",
+                "id": 702222,
+                "link": "/api/v1/people/702222"
+              },
+              "pitcher": {
+                "fullName": "Kyle Backhus",
+                "id": 679775,
+                "link": "/api/v1/people/679775"
+              },
               "team": {
                 "id": 143,
                 "link": "/api/v1/teams/143",
                 "name": "Philadelphia Phillies"
               }
             },
+            "outs": 3,
             "scheduledInnings": 9,
+            "strikes": 2,
             "teams": {
-              "away": {},
-              "home": {}
+              "away": {
+                "errors": 0,
+                "hits": 5,
+                "leftOnBase": 5,
+                "runs": 2
+              },
+              "home": {
+                "errors": 1,
+                "hits": 8,
+                "leftOnBase": 5,
+                "runs": 5
+              }
             }
           },
           "link": "/api/v1.1/game/824091/feed/live",
@@ -42195,18 +42414,19 @@
           "seriesDescription": "Regular Season",
           "seriesGameNumber": 2,
           "status": {
-            "abstractGameCode": "P",
-            "abstractGameState": "Preview",
-            "codedGameState": "S",
-            "detailedState": "Scheduled",
+            "abstractGameCode": "F",
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
             "startTimeTBD": false,
-            "statusCode": "S"
+            "statusCode": "F"
           },
           "teams": {
             "away": {
+              "isWinner": false,
               "leagueRecord": {
-                "losses": 39,
-                "pct": ".562",
+                "losses": 40,
+                "pct": ".556",
                 "ties": 0,
                 "wins": 50
               },
@@ -42215,6 +42435,7 @@
                 "id": 605400,
                 "link": "/api/v1/people/605400"
               },
+              "score": 2,
               "seriesNumber": 29,
               "splitSquad": false,
               "springLeague": {
@@ -42272,17 +42493,19 @@
               }
             },
             "home": {
+              "isWinner": true,
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "probablePitcher": {
                 "fullName": "Luinder Avila",
                 "id": 679883,
                 "link": "/api/v1/people/679883"
               },
+              "score": 5,
               "seriesNumber": 29,
               "splitSquad": false,
               "springLeague": {
@@ -42419,8 +42642,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 39,
-                "pct": ".562",
+                "losses": 40,
+                "pct": ".556",
                 "ties": 0,
                 "wins": 50
               },
@@ -42488,9 +42711,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "probablePitcher": {
                 "fullName": "Noah Cameron",
@@ -42634,9 +42857,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 30,
               "splitSquad": false,
@@ -42697,9 +42920,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 53,
-                "pct": ".404",
+                "pct": ".411",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
               },
               "seriesNumber": 30,
               "splitSquad": false,
@@ -42838,9 +43061,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 30,
               "splitSquad": false,
@@ -42901,9 +43124,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 53,
-                "pct": ".404",
+                "pct": ".411",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
               },
               "probablePitcher": {
                 "fullName": "Christian Scott",
@@ -43006,17 +43229,17 @@
           "linescore": {
             "defense": {
               "team": {
-                "id": 121,
-                "link": "/api/v1/teams/121",
-                "name": "New York Mets"
+                "id": 118,
+                "link": "/api/v1/teams/118",
+                "name": "Kansas City Royals"
               }
             },
             "innings": [],
             "offense": {
               "team": {
-                "id": 118,
-                "link": "/api/v1/teams/118",
-                "name": "Kansas City Royals"
+                "id": 121,
+                "link": "/api/v1/teams/121",
+                "name": "New York Mets"
               }
             },
             "scheduledInnings": 9,
@@ -43047,9 +43270,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 30,
               "splitSquad": false,
@@ -43110,9 +43333,14 @@
             "home": {
               "leagueRecord": {
                 "losses": 53,
-                "pct": ".404",
+                "pct": ".411",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
+              },
+              "probablePitcher": {
+                "fullName": "Sean Manaea",
+                "id": 640455,
+                "link": "/api/v1/people/640455"
               },
               "seriesNumber": 30,
               "splitSquad": false,
@@ -43251,9 +43479,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 31,
               "splitSquad": false,
@@ -43313,8 +43541,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".467",
+                "losses": 49,
+                "pct": ".462",
                 "ties": 0,
                 "wins": 42
               },
@@ -43455,9 +43683,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 31,
               "splitSquad": false,
@@ -43517,8 +43745,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".467",
+                "losses": 49,
+                "pct": ".462",
                 "ties": 0,
                 "wins": 42
               },
@@ -43659,9 +43887,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 31,
               "splitSquad": false,
@@ -43721,8 +43949,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".467",
+                "losses": 49,
+                "pct": ".462",
                 "ties": 0,
                 "wins": 42
               },
@@ -43863,9 +44091,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".489",
+                "pct": ".494",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -43926,9 +44154,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -44067,9 +44295,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".489",
+                "pct": ".494",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -44130,9 +44358,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -44271,9 +44499,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".489",
+                "pct": ".494",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -44334,9 +44562,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 32,
               "splitSquad": false,
@@ -44474,8 +44702,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 51,
-                "pct": ".420",
+                "losses": 52,
+                "pct": ".416",
                 "ties": 0,
                 "wins": 37
               },
@@ -44538,9 +44766,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 33,
               "splitSquad": false,
@@ -44678,8 +44906,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 51,
-                "pct": ".420",
+                "losses": 52,
+                "pct": ".416",
                 "ties": 0,
                 "wins": 37
               },
@@ -44742,9 +44970,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 33,
               "splitSquad": false,
@@ -44882,8 +45110,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 51,
-                "pct": ".420",
+                "losses": 52,
+                "pct": ".416",
                 "ties": 0,
                 "wins": 37
               },
@@ -44946,9 +45174,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 33,
               "splitSquad": false,
@@ -45087,9 +45315,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45150,9 +45378,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45291,9 +45519,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45354,9 +45582,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45495,9 +45723,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45558,9 +45786,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45699,9 +45927,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45762,9 +45990,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 34,
               "splitSquad": false,
@@ -45903,9 +46131,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -45966,9 +46194,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -46107,9 +46335,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -46170,9 +46398,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -46311,9 +46539,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -46374,9 +46602,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 35,
               "splitSquad": false,
@@ -46515,9 +46743,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -46578,9 +46806,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".400",
+                "pct": ".407",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -46719,9 +46947,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -46782,9 +47010,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".400",
+                "pct": ".407",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -46923,9 +47151,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -46986,9 +47214,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".400",
+                "pct": ".407",
                 "ties": 0,
-                "wins": 36
+                "wins": 37
               },
               "seriesNumber": 36,
               "splitSquad": false,
@@ -47127,9 +47355,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47190,9 +47418,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47331,9 +47559,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47394,9 +47622,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47535,9 +47763,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".478",
+                "pct": ".484",
                 "ties": 0,
-                "wins": 43
+                "wins": 44
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47598,9 +47826,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 37,
               "splitSquad": false,
@@ -47739,9 +47967,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 40,
-                "pct": ".551",
+                "pct": ".556",
                 "ties": 0,
-                "wins": 49
+                "wins": 50
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -47802,9 +48030,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 38,
               "splitSquad": false,
@@ -47943,9 +48171,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 40,
-                "pct": ".551",
+                "pct": ".556",
                 "ties": 0,
-                "wins": 49
+                "wins": 50
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -48006,9 +48234,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 38,
               "splitSquad": false,
@@ -48147,9 +48375,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 40,
-                "pct": ".551",
+                "pct": ".556",
                 "ties": 0,
-                "wins": 49
+                "wins": 50
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -48210,9 +48438,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 38,
               "splitSquad": false,
@@ -48351,9 +48579,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -48413,8 +48641,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 31,
-                "pct": ".656",
+                "losses": 32,
+                "pct": ".648",
                 "ties": 0,
                 "wins": 59
               },
@@ -48555,9 +48783,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -48617,8 +48845,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 31,
-                "pct": ".656",
+                "losses": 32,
+                "pct": ".648",
                 "ties": 0,
                 "wins": 59
               },
@@ -48759,9 +48987,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 39,
               "splitSquad": false,
@@ -48821,8 +49049,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 31,
-                "pct": ".656",
+                "losses": 32,
+                "pct": ".648",
                 "ties": 0,
                 "wins": 59
               },
@@ -48963,9 +49191,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 40,
               "splitSquad": false,
@@ -49025,8 +49253,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 54,
-                "pct": ".400",
+                "losses": 55,
+                "pct": ".396",
                 "ties": 0,
                 "wins": 36
               },
@@ -49167,9 +49395,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 40,
               "splitSquad": false,
@@ -49229,8 +49457,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 54,
-                "pct": ".400",
+                "losses": 55,
+                "pct": ".396",
                 "ties": 0,
                 "wins": 36
               },
@@ -49371,9 +49599,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 40,
               "splitSquad": false,
@@ -49433,8 +49661,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 54,
-                "pct": ".400",
+                "losses": 55,
+                "pct": ".396",
                 "ties": 0,
                 "wins": 36
               },
@@ -49574,8 +49802,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".461",
+                "losses": 49,
+                "pct": ".456",
                 "ties": 0,
                 "wins": 41
               },
@@ -49638,9 +49866,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 41,
               "splitSquad": false,
@@ -49778,8 +50006,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".461",
+                "losses": 49,
+                "pct": ".456",
                 "ties": 0,
                 "wins": 41
               },
@@ -49842,9 +50070,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 41,
               "splitSquad": false,
@@ -49982,8 +50210,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".461",
+                "losses": 49,
+                "pct": ".456",
                 "ties": 0,
                 "wins": 41
               },
@@ -50046,9 +50274,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 41,
               "splitSquad": false,
@@ -50186,8 +50414,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 48,
-                "pct": ".461",
+                "losses": 49,
+                "pct": ".456",
                 "ties": 0,
                 "wins": 41
               },
@@ -50250,9 +50478,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 41,
               "splitSquad": false,
@@ -50391,9 +50619,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -50454,9 +50682,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -50595,9 +50823,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -50658,9 +50886,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -50799,9 +51027,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 50,
-                "pct": ".438",
+                "pct": ".444",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -50862,9 +51090,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 42,
               "splitSquad": false,
@@ -51003,9 +51231,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 43,
               "splitSquad": false,
@@ -51065,8 +51293,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -51207,9 +51435,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 43,
               "splitSquad": false,
@@ -51269,8 +51497,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -51411,9 +51639,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 43,
               "splitSquad": false,
@@ -51473,8 +51701,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -51615,9 +51843,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 44,
               "splitSquad": false,
@@ -51677,8 +51905,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -51819,9 +52047,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 44,
               "splitSquad": false,
@@ -51881,8 +52109,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -52023,9 +52251,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 44,
               "splitSquad": false,
@@ -52085,8 +52313,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -52227,9 +52455,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".533",
+                "pct": ".538",
                 "ties": 0,
-                "wins": 48
+                "wins": 49
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52290,9 +52518,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52431,9 +52659,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".533",
+                "pct": ".538",
                 "ties": 0,
-                "wins": 48
+                "wins": 49
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52494,9 +52722,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52635,9 +52863,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".533",
+                "pct": ".538",
                 "ties": 0,
-                "wins": 48
+                "wins": 49
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52698,9 +52926,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 45,
               "splitSquad": false,
@@ -52838,8 +53066,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -52902,9 +53130,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 46,
               "splitSquad": false,
@@ -53042,8 +53270,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -53106,9 +53334,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 46,
               "splitSquad": false,
@@ -53246,8 +53474,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 47,
-                "pct": ".472",
+                "losses": 48,
+                "pct": ".467",
                 "ties": 0,
                 "wins": 42
               },
@@ -53310,9 +53538,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 46,
               "splitSquad": false,
@@ -53450,8 +53678,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 44,
-                "pct": ".500",
+                "losses": 45,
+                "pct": ".494",
                 "ties": 0,
                 "wins": 44
               },
@@ -53514,9 +53742,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 47,
               "splitSquad": false,
@@ -53654,8 +53882,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 44,
-                "pct": ".500",
+                "losses": 45,
+                "pct": ".494",
                 "ties": 0,
                 "wins": 44
               },
@@ -53718,9 +53946,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 47,
               "splitSquad": false,
@@ -53858,8 +54086,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 44,
-                "pct": ".500",
+                "losses": 45,
+                "pct": ".494",
                 "ties": 0,
                 "wins": 44
               },
@@ -53922,9 +54150,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 47,
               "splitSquad": false,
@@ -54063,9 +54291,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54126,9 +54354,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 48,
-                "pct": ".448",
+                "pct": ".455",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54267,9 +54495,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54330,9 +54558,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 48,
-                "pct": ".448",
+                "pct": ".455",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54471,9 +54699,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54534,9 +54762,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 48,
-                "pct": ".448",
+                "pct": ".455",
                 "ties": 0,
-                "wins": 39
+                "wins": 40
               },
               "seriesNumber": 48,
               "splitSquad": false,
@@ -54676,9 +54904,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -54739,9 +54967,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".484",
+                "pct": ".489",
                 "ties": 0,
-                "wins": 44
+                "wins": 45
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -54880,9 +55108,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -54943,9 +55171,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".484",
+                "pct": ".489",
                 "ties": 0,
-                "wins": 44
+                "wins": 45
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -55084,9 +55312,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -55147,9 +55375,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 47,
-                "pct": ".484",
+                "pct": ".489",
                 "ties": 0,
-                "wins": 44
+                "wins": 45
               },
               "seriesNumber": 49,
               "splitSquad": false,
@@ -55288,9 +55516,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55351,9 +55579,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".500",
+                "pct": ".505",
                 "ties": 0,
-                "wins": 45
+                "wins": 46
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55492,9 +55720,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55555,9 +55783,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".500",
+                "pct": ".505",
                 "ties": 0,
-                "wins": 45
+                "wins": 46
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55696,9 +55924,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55759,9 +55987,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 45,
-                "pct": ".500",
+                "pct": ".505",
                 "ties": 0,
-                "wins": 45
+                "wins": 46
               },
               "seriesNumber": 50,
               "splitSquad": false,
@@ -55900,9 +56128,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".523",
+                "pct": ".528",
                 "ties": 0,
-                "wins": 46
+                "wins": 47
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -55963,9 +56191,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 51,
               "splitSquad": false,
@@ -56104,9 +56332,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".523",
+                "pct": ".528",
                 "ties": 0,
-                "wins": 46
+                "wins": 47
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -56167,9 +56395,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 51,
               "splitSquad": false,
@@ -56308,9 +56536,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 42,
-                "pct": ".523",
+                "pct": ".528",
                 "ties": 0,
-                "wins": 46
+                "wins": 47
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -56371,9 +56599,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 51,
               "splitSquad": false,
@@ -56511,8 +56739,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -56575,9 +56803,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -56715,8 +56943,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -56779,9 +57007,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -56919,8 +57147,8 @@
           "teams": {
             "away": {
               "leagueRecord": {
-                "losses": 43,
-                "pct": ".522",
+                "losses": 44,
+                "pct": ".516",
                 "ties": 0,
                 "wins": 47
               },
@@ -56983,9 +57211,9 @@
             "home": {
               "leagueRecord": {
                 "losses": 54,
-                "pct": ".393",
+                "pct": ".400",
                 "ties": 0,
-                "wins": 35
+                "wins": 36
               },
               "seriesNumber": 52,
               "splitSquad": false,
