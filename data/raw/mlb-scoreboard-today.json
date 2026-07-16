@@ -1,8 +1,222 @@
 {
   "copyright": "Copyright 2026 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
-  "dates": [],
+  "dates": [
+    {
+      "date": "2026-07-16",
+      "events": [],
+      "games": [
+        {
+          "calendarEventID": "14-823440-2026-07-16",
+          "content": {
+            "link": "/api/v1/game/823440/content"
+          },
+          "dayNight": "night",
+          "description": "Moved from 7/17",
+          "doubleHeader": "N",
+          "gameDate": "2026-07-16T23:10:00Z",
+          "gameGuid": "ad2a6657-f704-4bc6-8a93-4fa49f7f58ce",
+          "gameNumber": 1,
+          "gamePk": 823440,
+          "gameType": "R",
+          "gamedayType": "P",
+          "gamesInSeries": 3,
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game",
+          "inningBreakLength": 145,
+          "linescore": {
+            "defense": {
+              "team": {
+                "id": 121,
+                "link": "/api/v1/teams/121",
+                "name": "New York Mets"
+              }
+            },
+            "innings": [],
+            "offense": {
+              "team": {
+                "id": 143,
+                "link": "/api/v1/teams/143",
+                "name": "Philadelphia Phillies"
+              }
+            },
+            "scheduledInnings": 9,
+            "teams": {
+              "away": {},
+              "home": {}
+            }
+          },
+          "link": "/api/v1.1/game/823440/feed/live",
+          "officialDate": "2026-07-16",
+          "publicFacing": true,
+          "recordSource": "S",
+          "reverseHomeAwayStatus": false,
+          "scheduledInnings": 9,
+          "season": "2026",
+          "seasonDisplay": "2026",
+          "seriesDescription": "Regular Season",
+          "seriesGameNumber": 1,
+          "status": {
+            "abstractGameCode": "P",
+            "abstractGameState": "Preview",
+            "codedGameState": "S",
+            "detailedState": "Scheduled",
+            "startTimeTBD": false,
+            "statusCode": "S"
+          },
+          "teams": {
+            "away": {
+              "leagueRecord": {
+                "losses": 57,
+                "pct": ".412",
+                "ties": 0,
+                "wins": 40
+              },
+              "probablePitcher": {
+                "fullName": "Christian Scott",
+                "id": 681035,
+                "link": "/api/v1/people/681035"
+              },
+              "seriesNumber": 32,
+              "splitSquad": false,
+              "springLeague": {
+                "abbreviation": "GL",
+                "id": 115,
+                "link": "/api/v1/league/115",
+                "name": "Grapefruit League"
+              },
+              "team": {
+                "abbreviation": "NYM",
+                "active": true,
+                "allStarStatus": "N",
+                "clubName": "Mets",
+                "division": {
+                  "id": 204,
+                  "link": "/api/v1/divisions/204",
+                  "name": "National League East"
+                },
+                "fileCode": "nym",
+                "firstYearOfPlay": "1962",
+                "franchiseName": "New York",
+                "id": 121,
+                "league": {
+                  "id": 104,
+                  "link": "/api/v1/league/104",
+                  "name": "National League"
+                },
+                "link": "/api/v1/teams/121",
+                "locationName": "Flushing",
+                "name": "New York Mets",
+                "season": 2026,
+                "shortName": "NY Mets",
+                "sport": {
+                  "id": 1,
+                  "link": "/api/v1/sports/1",
+                  "name": "Major League Baseball"
+                },
+                "springLeague": {
+                  "abbreviation": "GL",
+                  "id": 115,
+                  "link": "/api/v1/league/115",
+                  "name": "Grapefruit League"
+                },
+                "springVenue": {
+                  "id": 2856,
+                  "link": "/api/v1/venues/2856"
+                },
+                "teamCode": "nyn",
+                "teamName": "Mets",
+                "venue": {
+                  "id": 3289,
+                  "link": "/api/v1/venues/3289",
+                  "name": "Citi Field"
+                }
+              }
+            },
+            "home": {
+              "leagueRecord": {
+                "losses": 43,
+                "pct": ".557",
+                "ties": 0,
+                "wins": 54
+              },
+              "probablePitcher": {
+                "fullName": "Aaron Nola",
+                "id": 605400,
+                "link": "/api/v1/people/605400"
+              },
+              "seriesNumber": 32,
+              "splitSquad": false,
+              "springLeague": {
+                "abbreviation": "GL",
+                "id": 115,
+                "link": "/api/v1/league/115",
+                "name": "Grapefruit League"
+              },
+              "team": {
+                "abbreviation": "PHI",
+                "active": true,
+                "allStarStatus": "N",
+                "clubName": "Phillies",
+                "division": {
+                  "id": 204,
+                  "link": "/api/v1/divisions/204",
+                  "name": "National League East"
+                },
+                "fileCode": "phi",
+                "firstYearOfPlay": "1883",
+                "franchiseName": "Philadelphia",
+                "id": 143,
+                "league": {
+                  "id": 104,
+                  "link": "/api/v1/league/104",
+                  "name": "National League"
+                },
+                "link": "/api/v1/teams/143",
+                "locationName": "Philadelphia",
+                "name": "Philadelphia Phillies",
+                "season": 2026,
+                "shortName": "Philadelphia",
+                "sport": {
+                  "id": 1,
+                  "link": "/api/v1/sports/1",
+                  "name": "Major League Baseball"
+                },
+                "springLeague": {
+                  "abbreviation": "GL",
+                  "id": 115,
+                  "link": "/api/v1/league/115",
+                  "name": "Grapefruit League"
+                },
+                "springVenue": {
+                  "id": 2700,
+                  "link": "/api/v1/venues/2700"
+                },
+                "teamCode": "phi",
+                "teamName": "Phillies",
+                "venue": {
+                  "id": 2681,
+                  "link": "/api/v1/venues/2681",
+                  "name": "Citizens Bank Park"
+                }
+              }
+            }
+          },
+          "tiebreaker": "N",
+          "venue": {
+            "id": 2681,
+            "link": "/api/v1/venues/2681",
+            "name": "Citizens Bank Park"
+          }
+        }
+      ],
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 0,
+      "totalItems": 1
+    }
+  ],
   "totalEvents": 0,
-  "totalGames": 0,
+  "totalGames": 1,
   "totalGamesInProgress": 0,
-  "totalItems": 0
+  "totalItems": 1
 }
