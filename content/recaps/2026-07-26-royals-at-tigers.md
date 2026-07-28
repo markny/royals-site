@@ -18,4 +18,4 @@ Starling Marte produced the hardest tracked Royals contact: 106.6 mph at a 7.0 d
 
 ## Standings Implication
 
-11.5 GB in the AL Central
+11.0 GB in the AL Central
