@@ -1,0 +1,21 @@
+---
+title: "Royals at Twins Recap"
+date: "2026-07-29"
+source: "deterministic-template"
+llm_ready: true
+---
+
+The Royals beat the Minnesota Twins, KC 4, MIN 0. Randy Dobnak led the night, working 7.0 innings with 0 earned runs, 4 strikeouts and 1 walk. Jac Caglianone supplied the loudest Royals contact at 109.5 mph.
+
+## Key Performers
+
+- Randy Dobnak
+- Jac Caglianone
+
+## Statcast Notes
+
+Jac Caglianone produced the hardest tracked Royals contact: 109.5 mph at a -25.0 degree launch angle.
+
+## Standings Implication
+
+11.0 GB in the AL Central
