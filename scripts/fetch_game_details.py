@@ -202,11 +202,20 @@ def is_short_play_highlight(item):
 
 
 def normalize_highlights(content, limit=6):
-    items = (
-        content.get("highlights", {})
-        .get("highlights", {})
-        .get("items", [])
-    )
+    if not isinstance(content, dict):
+        return []
+
+    highlights = content.get("highlights") or {}
+    if not isinstance(highlights, dict):
+        return []
+
+    highlight_group = highlights.get("highlights") or {}
+    if not isinstance(highlight_group, dict):
+        return []
+
+    items = highlight_group.get("items") or []
+    if not isinstance(items, list):
+        return []
     highlights = []
     for item in items:
         if not is_short_play_highlight(item):

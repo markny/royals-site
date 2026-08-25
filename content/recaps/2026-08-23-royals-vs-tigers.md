@@ -18,4 +18,4 @@ Vinnie Pasquantino produced the hardest tracked Royals contact: 107.5 mph at a 2
 
 ## Standings Implication
 
-11.0 GB in the AL Central
+10.5 GB in the AL Central
