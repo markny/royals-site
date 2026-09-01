@@ -18,4 +18,4 @@ Carter Jensen produced the hardest tracked Royals contact: 109.9 mph at a 1.0 de
 
 ## Standings Implication
 
-11.0 GB in the AL Central
+10.5 GB in the AL Central
