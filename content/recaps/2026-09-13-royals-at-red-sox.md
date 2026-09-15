@@ -18,4 +18,4 @@ Luke Maile produced the hardest tracked Royals contact: 105.9 mph at a 0.0 degre
 
 ## Standings Implication
 
-10.5 GB in the AL Central
+11.0 GB in the AL Central
