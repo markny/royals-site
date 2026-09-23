@@ -58844,14 +58844,12 @@
               "away": {
                 "errors": 0,
                 "hits": 7,
-                "isWinner": true,
                 "leftOnBase": 8,
                 "runs": 3
               },
               "home": {
                 "errors": 1,
                 "hits": 1,
-                "isWinner": false,
                 "leftOnBase": 2,
                 "runs": 0
               }
@@ -61629,11 +61627,6 @@
                 "id": 805427,
                 "link": "/api/v1/people/805427"
               },
-              "second": {
-                "fullName": "Zach McKinstry",
-                "id": 656716,
-                "link": "/api/v1/people/656716"
-              },
               "team": {
                 "id": 116,
                 "link": "/api/v1/teams/116",
@@ -61647,14 +61640,12 @@
               "away": {
                 "errors": 0,
                 "hits": 3,
-                "isWinner": false,
                 "leftOnBase": 5,
                 "runs": 1
               },
               "home": {
                 "errors": 0,
                 "hits": 5,
-                "isWinner": true,
                 "leftOnBase": 3,
                 "runs": 3
               }
@@ -64906,11 +64897,6 @@
                 "link": "/api/v1/people/695600"
               },
               "battingOrder": 1,
-              "first": {
-                "fullName": "Kyle Isbel",
-                "id": 664728,
-                "link": "/api/v1/people/664728"
-              },
               "inHole": {
                 "fullName": "Josh Rojas",
                 "id": 668942,
@@ -64939,14 +64925,12 @@
               "away": {
                 "errors": 1,
                 "hits": 7,
-                "isWinner": false,
                 "leftOnBase": 9,
                 "runs": 1
               },
               "home": {
                 "errors": 0,
                 "hits": 13,
-                "isWinner": true,
                 "leftOnBase": 6,
                 "runs": 11
               }
@@ -69669,14 +69653,12 @@
               "away": {
                 "errors": 0,
                 "hits": 10,
-                "isWinner": true,
                 "leftOnBase": 10,
                 "runs": 3
               },
               "home": {
                 "errors": 0,
                 "hits": 8,
-                "isWinner": false,
                 "leftOnBase": 8,
                 "runs": 2
               }
@@ -73610,26 +73592,272 @@
           "ifNecessary": "N",
           "ifNecessaryDescription": "Normal Game",
           "inningBreakLength": 120,
+          "isTie": false,
           "linescore": {
+            "balls": 0,
+            "currentInning": 9,
+            "currentInningOrdinal": "9th",
             "defense": {
+              "batter": {
+                "fullName": "Andrew Benintendi",
+                "id": 643217,
+                "link": "/api/v1/people/643217"
+              },
+              "battingOrder": 2,
+              "catcher": {
+                "fullName": "Kyle Teel",
+                "id": 691019,
+                "link": "/api/v1/people/691019"
+              },
+              "center": {
+                "fullName": "Brenton Doyle",
+                "id": 686668,
+                "link": "/api/v1/people/686668"
+              },
+              "first": {
+                "fullName": "Munetaka Murakami",
+                "id": 808959,
+                "link": "/api/v1/people/808959"
+              },
+              "inHole": {
+                "fullName": "Munetaka Murakami",
+                "id": 808959,
+                "link": "/api/v1/people/808959"
+              },
+              "left": {
+                "fullName": "Randal Grichuk",
+                "id": 545341,
+                "link": "/api/v1/people/545341"
+              },
+              "onDeck": {
+                "fullName": "Randal Grichuk",
+                "id": 545341,
+                "link": "/api/v1/people/545341"
+              },
+              "pitcher": {
+                "fullName": "Luis Castillo",
+                "id": 622491,
+                "link": "/api/v1/people/622491"
+              },
+              "right": {
+                "fullName": "Tristan Peters",
+                "id": 671976,
+                "link": "/api/v1/people/671976"
+              },
+              "second": {
+                "fullName": "Chase Meidroth",
+                "id": 805367,
+                "link": "/api/v1/people/805367"
+              },
+              "shortstop": {
+                "fullName": "Luisangel Acu\u00f1a",
+                "id": 682668,
+                "link": "/api/v1/people/682668"
+              },
               "team": {
                 "id": 145,
                 "link": "/api/v1/teams/145",
                 "name": "Chicago White Sox"
+              },
+              "third": {
+                "fullName": "Colson Montgomery",
+                "id": 695657,
+                "link": "/api/v1/people/695657"
               }
             },
-            "innings": [],
+            "inningHalf": "Bottom",
+            "inningState": "Bottom",
+            "innings": [
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 2
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "num": 1,
+                "ordinalNum": "1st"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 0,
+                  "runs": 1
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 2,
+                "ordinalNum": "2nd"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 0,
+                  "runs": 3
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 1
+                },
+                "num": 3,
+                "ordinalNum": "3rd"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 0,
+                  "runs": 3
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 2,
+                  "leftOnBase": 1,
+                  "runs": 2
+                },
+                "num": 4,
+                "ordinalNum": "4th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 1
+                },
+                "num": 5,
+                "ordinalNum": "5th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 6,
+                "ordinalNum": "6th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 5,
+                  "leftOnBase": 2,
+                  "runs": 5
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "num": 7,
+                "ordinalNum": "7th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 1,
+                  "leftOnBase": 1,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 3,
+                  "leftOnBase": 1,
+                  "runs": 3
+                },
+                "num": 8,
+                "ordinalNum": "8th"
+              },
+              {
+                "away": {
+                  "errors": 0,
+                  "hits": 0,
+                  "leftOnBase": 0,
+                  "runs": 0
+                },
+                "home": {
+                  "errors": 0,
+                  "hits": 3,
+                  "leftOnBase": 0,
+                  "runs": 4
+                },
+                "num": 9,
+                "ordinalNum": "9th"
+              }
+            ],
+            "isTopInning": false,
             "offense": {
+              "batter": {
+                "fullName": "Michael Massey",
+                "id": 686681,
+                "link": "/api/v1/people/686681"
+              },
+              "battingOrder": 7,
+              "inHole": {
+                "fullName": "Kyle Isbel",
+                "id": 664728,
+                "link": "/api/v1/people/664728"
+              },
+              "onDeck": {
+                "fullName": "Nick Loftin",
+                "id": 679845,
+                "link": "/api/v1/people/679845"
+              },
+              "pitcher": {
+                "fullName": "Alex Lange",
+                "id": 656638,
+                "link": "/api/v1/people/656638"
+              },
               "team": {
                 "id": 118,
                 "link": "/api/v1/teams/118",
                 "name": "Kansas City Royals"
               }
             },
+            "outs": 3,
             "scheduledInnings": 9,
+            "strikes": 0,
             "teams": {
-              "away": {},
-              "home": {}
+              "away": {
+                "errors": 0,
+                "hits": 13,
+                "leftOnBase": 5,
+                "runs": 14
+              },
+              "home": {
+                "errors": 0,
+                "hits": 13,
+                "leftOnBase": 5,
+                "runs": 11
+              }
             }
           },
           "link": "/api/v1.1/game/824061/feed/live",
@@ -73643,26 +73871,28 @@
           "seriesDescription": "Regular Season",
           "seriesGameNumber": 1,
           "status": {
-            "abstractGameCode": "P",
-            "abstractGameState": "Preview",
-            "codedGameState": "S",
-            "detailedState": "Scheduled",
+            "abstractGameCode": "F",
+            "abstractGameState": "Final",
+            "codedGameState": "F",
+            "detailedState": "Final",
             "startTimeTBD": false,
-            "statusCode": "S"
+            "statusCode": "F"
           },
           "teams": {
             "away": {
+              "isWinner": true,
               "leagueRecord": {
                 "losses": 76,
-                "pct": ".513",
+                "pct": ".516",
                 "ties": 0,
-                "wins": 80
+                "wins": 81
               },
               "probablePitcher": {
                 "fullName": "Anthony Kay",
                 "id": 641743,
                 "link": "/api/v1/people/641743"
               },
+              "score": 14,
               "seriesNumber": 52,
               "splitSquad": false,
               "springLeague": {
@@ -73720,9 +73950,10 @@
               }
             },
             "home": {
+              "isWinner": false,
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
@@ -73731,6 +73962,7 @@
                 "id": 663738,
                 "link": "/api/v1/people/663738"
               },
+              "score": 11,
               "seriesNumber": 51,
               "splitSquad": false,
               "springLeague": {
@@ -73868,14 +74100,14 @@
             "away": {
               "leagueRecord": {
                 "losses": 76,
-                "pct": ".513",
+                "pct": ".516",
                 "ties": 0,
-                "wins": 80
+                "wins": 81
               },
               "probablePitcher": {
-                "fullName": "Erick Fedde",
-                "id": 607200,
-                "link": "/api/v1/people/607200"
+                "fullName": "Bryan Hudson",
+                "id": 663542,
+                "link": "/api/v1/people/663542"
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -73935,8 +74167,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
@@ -74082,9 +74314,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 76,
-                "pct": ".513",
+                "pct": ".516",
                 "ties": 0,
-                "wins": 80
+                "wins": 81
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -74144,8 +74376,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
@@ -74291,9 +74523,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 75,
-                "pct": ".519",
+                "pct": ".522",
                 "ties": 0,
-                "wins": 81
+                "wins": 82
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -74353,8 +74585,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
@@ -74495,9 +74727,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 75,
-                "pct": ".519",
+                "pct": ".522",
                 "ties": 0,
-                "wins": 81
+                "wins": 82
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -74557,8 +74789,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
@@ -74699,9 +74931,9 @@
             "away": {
               "leagueRecord": {
                 "losses": 75,
-                "pct": ".519",
+                "pct": ".522",
                 "ties": 0,
-                "wins": 81
+                "wins": 82
               },
               "seriesNumber": 52,
               "splitSquad": false,
@@ -74761,8 +74993,8 @@
             },
             "home": {
               "leagueRecord": {
-                "losses": 89,
-                "pct": ".429",
+                "losses": 90,
+                "pct": ".427",
                 "ties": 0,
                 "wins": 67
               },
